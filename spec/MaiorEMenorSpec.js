@@ -19,4 +19,11 @@ describe("MaiorEMenor", function() {
 		expect(algoritmo.pegaMaior()).toEqual(8);
 		expect(algoritmo.pegaMenor()).toEqual(5);
 	});
+	
+	it("should understand list with only one number", function() {
+		var algoritmo = new MaiorEMenor();
+		algoritmo.encontra([8]);
+		expect(algoritmo.pegaMaior()).toEqual(8);
+		expect(algoritmo.pegaMenor()).toEqual(8);
+	});
 });
